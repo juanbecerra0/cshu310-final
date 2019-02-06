@@ -13,6 +13,10 @@ public class FinalProject {
 
 	 public static void main(String[] args) {
 		 
+		 if (args.length == 0) {
+			 printUsage();
+		 }
+		 
 		 switch (args[0]) {
 		 	case "/?":
 		 		printUsage();
@@ -133,7 +137,7 @@ public class FinalProject {
 	  */
 	 private static void printUsage() {
 		 //	TODO insert meaningful usage statement
-		 System.err.println();
+		 System.err.println("*Print usage here*");
 		 System.exit(1);
 	 }
 }
